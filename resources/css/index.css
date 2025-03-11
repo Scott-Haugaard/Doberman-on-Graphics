@@ -4,15 +4,9 @@
 	box-sizing: border-box;
   }
   
+
 body {
   background-image: url("/resources/images/circuit-board.jpg");
-  background-size: 50px 50px;
-  background-repeat: repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-body {
-  background-image: url("circuit-board.jpg");
-  background-size: 50px 50px;
+  background-size: 50%;
   background-repeat: repeat;
 }
