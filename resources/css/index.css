@@ -3,20 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
-html body{
+html body {
   height: 100%;
   width: 100vw;
+  position: relative;
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
+  background-color: black;
 }
-body {
-  background: 
-  black
-  url("resources/images/chain.png")
-  repeat-y
-  60px
-  right
+body::after {
+  content: "";
+  position: fixed;
+  right: 1rem;
+  width: 150px;
+  height: 100%;
+  background: url("../images/chain2.png") repeat-y right top/150px auto;
+  pointer-events: none; 
+  z-index: -1; 
+  filter: invert(8%) sepia(24%) saturate(4649%) hue-rotate(343deg) brightness(95%) contrast(114%);
 }
+
 .container-fluid {
   width: 100vw;
 }
@@ -27,3 +34,19 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+/*#region ===== VIEWPORT BUG ======== */
+#viewport-size {
+  display: block; /* change from block to none to hide */
+  position: fixed;
+  right: 10px;
+  background: #fff;
+  color: black;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  z-index: 5;
+}
+/*#endregion*/
