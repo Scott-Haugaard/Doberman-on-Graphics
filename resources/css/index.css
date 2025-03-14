@@ -10,7 +10,6 @@ html body {
   width: 100vw;
   position: relative;
   display: flex;
-  margin-top: 100px;
   flex-direction: column;
   background-color: black;
 }
@@ -25,6 +24,12 @@ body::after {
   z-index: -1; 
   filter: invert(8%) sepia(24%) saturate(4649%) hue-rotate(343deg) brightness(95%) contrast(114%);
 }
+.active::before {
+  content: "\2B24"; 
+  color: yellow;
+  font-size: inherit;
+  margin-right: 0.5rem;
+}
 
 .container-fluid {
   width: 100vw;
@@ -35,6 +40,9 @@ body::after {
 a {
   color: inherit;
   text-decoration: none;
+}
+.headspace {
+  height: 150px;
 }
 
 /*#endregion*/
@@ -84,7 +92,8 @@ a {
   --cp00: #004372;  /* var(--cp00)     Color Primary 100%   */
   --cp10: #e8f5ff;  /* var(--cp10)     Color Primary 10%    */
   --cp50: #0274e0;  /* var(--cp50)     Color Primary 50%    */
-  --cplx: #ffd4dbd0;  /* var(--cp50)     Color Parallax       */
+  --cplx: #ffd4db;  /* var(--cplx)     Color Parallax       */
+  --cpcn: #2D0000;  /* var(--cpcn)     Color Chain          */
   --cs00: #6b7e63;  /* var(--cs00)     Color Secondary 100% */
   --cs10: #eff2ee;  /* var(--cs10)     Color Secondary 10%  */
   --ct00: #660033;  /* var(--ct00)     Color Tertiary 100%  */
@@ -111,16 +120,16 @@ a {
 }
 h1 {
   font-family: "Aachen", serif !important; 
-  color: var(--cp00);
+  color: white;
   margin: 0 !important;
   padding: 0 !important;
   font-size: 4rem !important;
   text-align: center !important;
-  text-shadow: black 1px 1px 5px;
+  text-shadow: var(--cpcn) 1px 1px 5px;
 }
 h2 {
-  font-family: "Tangerine", serif !important; 
-  color: var(--cp00);
+  font-family: "Aachen", serif !important; 
+  color: white;
   margin: 0 !important;
   padding: 0 !important;
   font-size: 4rem !important;
@@ -157,14 +166,13 @@ h2 {
 /*#region ===== NAVBAR ============== */
 
 .navbar { 
-  background-color: var(--cp10) !important;
+  background-color: var(--cpcn) !important;
   z-index: 1040 !important;
 }
 /* Navbar Title */
 .navbar-brand { 
-  font-family: "Tangerine", serif !important; 
-  font-size: 2.5rem;
-  color:var(--cp00);
+  font-family: "Aachen", serif !important; 
+  font-size: 2rem;
 }
 /* Navbar Hide on Scroll */
 #navbar-container { 
@@ -173,7 +181,7 @@ h2 {
   left: 0;
   width: 100%;
   z-index: 5;
-  transition: transform 1s ease, opacity 1s ease;
+/*  transition: transform 1s ease, opacity 1s ease; /\/\/\ Acting funky */
 }
 #navbar-container.scrolled { 
   transform: translateY(-100%);
@@ -278,7 +286,7 @@ h2 {
   padding: 2px 4px;
   border-radius: 4px;
   font-family: Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.75em;
   z-index: 5;
 }
 
