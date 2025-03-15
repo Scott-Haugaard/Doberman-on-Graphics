@@ -19,7 +19,7 @@ body::after {
   right: 1rem;
   width: 150px;
   height: 100%;
-  background: url("../images/chain2.png") repeat-y right top/150px auto;
+  background: url("../images/chain.png") repeat-y right top/150px auto;
   pointer-events: none; 
   z-index: -1; 
   filter: invert(8%) sepia(24%) saturate(4649%) hue-rotate(343deg) brightness(95%) contrast(114%);
@@ -30,7 +30,6 @@ body::after {
   font-size: inherit;
   margin-right: 0.5rem;
 }
-
 .container-fluid {
   width: 100vw;
 }
@@ -41,10 +40,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.headspace {
-  height: 150px;
-}
-
+/* 
+.headspace {    (Added to h1)
+  height: 0px;
+} 
 /*#endregion*/
 /*#region ===== CAROUSEL ============ */
 
@@ -114,30 +113,62 @@ a {
 /*#endregion*/
 /*#region ===== FONTS =============== */
 
+body {
+  color: white; 
+}
 @font-face {
   font-family: "Aachen", serif;
   src: url('/resources/fonts/aachen.otf') format("opentype");
 }
 h1 {
-  font-family: "Aachen", serif !important; 
+  font-family: "Aachen", serif; 
   color: white;
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 4rem !important;
-  text-align: center !important;
+  margin-top: 125px;
+  margin-bottom: 1rem;
+  padding: 0;
+  line-height: 3.8rem;
+  font-size: 4rem;
+  text-align: center;
   text-shadow: var(--cpcn) 1px 1px 5px;
+
 }
-h2 {
-  font-family: "Aachen", serif !important; 
-  color: white;
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 4rem !important;
-  margin-top: 2rem !important;  
-  text-align: center !important;
-  text-shadow: #1c1c1c 1px 1px 5px;
+h1 span {
+  color: yellow;
+}
+.hide {
+  visibility: hidden;
 }
 
+
+h2 {
+  font-family: "Aachen", serif; 
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  margin-top: 275px;  
+  text-align: center;
+  text-shadow: #1c1c1c 1px 1px 5px;
+}
+.navbar-brand > img {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: auto;
+  margin-left: 20px;
+  position: relative;
+}
+.dog {
+  font-family: "Aachen"; 
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+  transform: scaleX(2.85);
+  transform-origin: center center;  
+  margin-bottom: -50%;
+  letter-spacing: -1rem;
+  -webkit-text-stroke: 1px white;
+}
 /*#endregion*/
 /*#region ===== FOOTER ============== */
 
@@ -280,7 +311,6 @@ h2 {
 #viewport-size {
   display: block; /* change from block to none to hide */
   position: fixed;
-  right: 10px;
   background: #fff;
   color: black;
   padding: 2px 4px;
@@ -292,3 +322,21 @@ h2 {
 
 /*#endregion*/
 
+/*#region ===== SIGNATURE =========== *//*
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+ ___         _   _   
+/ __| __ ___| |_| |_ 
+\__ \/ _/ _ \  _|  _|
+|___/\__\___/\__|\__|
+ _  _                                 _ 
+| || |__ _ _  _ __ _ __ _ __ _ _ _ __| |
+| __ / _` | || / _` / _` / _` | '_/ _` |
+|_||_\__,_|\_,_\__, \__,_\__,_|_| \__,_|
+               |___/
+
+ScottHaugaard@hotmail.com - 760.456.9091
+
+/\//\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\//\/\
+
+*//*#endregion*/
