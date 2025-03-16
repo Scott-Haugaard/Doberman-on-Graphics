@@ -114,25 +114,18 @@ body {
   color: white; 
 }
 @font-face {
-  font-family: "Aachen", serif;
-  src: url('/resources/fonts/aachen.otf') format("opentype");
+  font-family: "Alfa Slab One", serif;
+  src: url('/resources/fonts/AlfaSlabOne-Regular.ttf') format("truetype");
 }
 h1 {
-  font-family: "Aachen", serif; 
+  font-family: "Alfa Slab One", serif; 
   color: white;
   margin-top: 125px;
   margin-bottom: 1rem;
   padding: 0;
-  line-height: 3.8rem;
   font-size: 4rem;
   text-align: center;
   text-shadow: var(--cpcn) 1px 1px 5px;
-}
-.tik {
-  color: yellow;
-}
-.hide {
-  visibility: hidden;
 }
 h2 {
   font-family: "Aachen", serif; 
@@ -170,11 +163,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 3px 10px 5px 10px;
-  background-color: var(--cp00);
+  background-color: var(--cpcn);
   font-size: .75rem;
   color:#fff;
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 .footer a {
@@ -296,6 +289,7 @@ footer {
 /*#endregion*/
 /*#region ===== VIEWPORT ============ */
 
+
 #viewport-size {
   display: block; /* change from block to none to hide */
   position: fixed;
@@ -308,8 +302,8 @@ footer {
   font-size: 0.75rem;
   z-index: 5;
   top: 100px; 
-  right: 60px;
-}
+  right: 20px;
+} 
 
 /*#endregion*/
 
@@ -326,7 +320,7 @@ footer {
 |_||_\__,_|\_,_\__, \__,_\__,_|_| \__,_|
                |___/
 
-ScottHaugaard@hotmail.com - 760.456.9091
+ScottHaugaard@hotmail.com - 760/456.9091
 
 /\//\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\//\/\
 
