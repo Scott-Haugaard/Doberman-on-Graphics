@@ -1,21 +1,24 @@
 ``` ==== TO DO ================
 
-FTP login from host
-Check PHP for contact forms
+Site works wll well locally, not on GitHug
+GitHub doesn't like Header in JS
+Footer is wonky - Should be in JS
 
 ```
 ``` ==== PAGE BUILD ===========
 
 PAGE			VER		STATE	
 
-Index 			1.0		Needs work
-Design 			1.0		Add Images
-Branding		0		Done
-Illustration	0		Done
-Navbar					Done
-Footer			OK		Done
-About 			OK		Done
-Site Map 		OK		Done
+Index 			0.2		Needs work
+Design 			0.2		Add Images
+Branding		0		
+Illustration	0		
+Photography		0		
+About 			0		
+Site Map 		0		
+Navbar			0.1		GitHub doesn't like JS delivery
+Footer			0.1		Wonky
+
 
 SCRIPTS			STATUS	STATE	
 
