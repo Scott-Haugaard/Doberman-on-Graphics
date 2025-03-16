@@ -1,3 +1,28 @@
+// #region === FOOTER ==============================
+
+class SiteFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+  
+    <div class="footer-container">
+        <div>&emsp;©<span id="year"></span>&emsp;Doberman on Graphics</div>
+        <div>(626) 325-8182&emsp;Los Angeles 
+        <span style="color: var(--cshl);">&emsp;&#x2B24;&emsp;</span>
+        San Diego&emsp;(760) 456-9091&emsp;</div>
+      </div>
+    `;
+
+    // Get the <span> element by its id and set it to the current year
+    const yearSpan = this.querySelector('#year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  }
+}
+
+customElements.define('site-footer', SiteFooter);
+
+ // #endregion
 // #region === NAVBAR ==============================
 
 class SiteHeader extends HTMLElement {
@@ -99,3 +124,4 @@ function updateViewportSize() {
   window.addEventListener('resize', updateViewportSize);
   
  // #endregion
+
