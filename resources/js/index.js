@@ -7,7 +7,7 @@ class SiteFooter extends HTMLElement {
     <div class="footer-container">
         <div>&emsp;©<span id="year"></span>&emsp;Doberman on Graphics</div>
         <div>(626) 325-8182&emsp;Los Angeles 
-        <span style="color: var(--cshl);">&emsp;&#x2B24;&emsp;</span>
+        <span style="color: var(--ch1);">&emsp;&#x2B24;&emsp;</span>
         San Diego&emsp;(760) 456-9091&emsp;</div>
       </div>
     `;
@@ -31,7 +31,7 @@ class SiteHeader extends HTMLElement {
       <div id="navbar-container">
         <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="resources/images/DOGlogo.svg" alt="Site Logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="resources/images/DOGlogo.svg" alt="DoG Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
