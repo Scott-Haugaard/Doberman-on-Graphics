@@ -31,7 +31,38 @@ class SiteHeader extends HTMLElement {
       <div id="navbar-container">
         <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="resources/images/DOGlogo.svg" alt="DoG Logo"></a>
+            <a class="navbar-brand" href="index.html" id="navbar-logo">
+
+              <svg xmlns="http://www.w3.org/2000/svg" xml: width="100%" height="100%" viewBox="0 0 600 100" 
+              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+
+              <path               
+              class="dog-letter letter-d"
+              style="fill:var(--chl);
+              fill-rule:nonzero" 
+              transform="matrix(.9836 0 0 1 0 0)"
+              d="M0 1.909V18.96c9.856 1.458 10.492 4.262 10.81 7.631v46.82c-.318 3.256-1.272 6.173-10.81 7.631v17.051h120.17c25.752 0 49.903-.561 69.288-7.067 20.656-6.843 21.927-14.135 21.927-23.566V31.419c0-9.206-2.225-17.956-24.469-24.125-19.385-5.273-46.079-5.385-69.293-5.385H0Zm189.349 61.789A7.655 7.655 0 0 1 197 71.349 7.654 7.654 0 0 1 189.349 79a7.655 7.655 0 0 1-7.651-7.651 7.656 7.656 0 0 1 7.651-7.651ZM95.658 22.886h6.685c18.464 0 24.194 2.357 24.194 9.319V68.47c0 6.962-5.73 9.32-24.194 9.32h-6.685V22.886Z" 
+              />
+
+              <path               
+              class="dog-letter letter-o"
+              style="fill:var(--chl);
+              fill-rule:nonzero" 
+              transform="matrix(.9836 0 0 1 0 0)"
+              d="M412 29.735C412 5.946 370.688.001 310.599.001s-101.4 5.945-101.4 29.734v40.532c0 23.789 41.311 29.734 101.4 29.734 60.089 0 101.401-5.945 101.401-29.734V29.735Zm-117.953-1.572c0-.674-.954-7.41 16.552-7.41s16.553 6.736 16.553 7.41v43.563c0 .674.953 7.523-16.553 7.523s-16.552-6.849-16.552-7.523V28.163Zm93.802 35.535a7.655 7.655 0 0 1 7.651 7.651A7.654 7.654 0 0 1 387.849 79a7.655 7.655 0 0 1-7.651-7.651 7.656 7.656 0 0 1 7.651-7.651Z" 
+              />
+
+              <path 
+              class="dog-letter letter-g"
+              style="fill:var(--chl);
+              fill-rule:nonzero" 
+              transform="matrix(.9836 0 0 1 0 0)"
+              d="M610 11.106C580.127 3.029 541.673.001 504.467.001c-25.13 0-52.142 1.57-71.844 7.515-19.703 5.833-22.563 14.136-22.563 22.672v36.591c0 10.56 1.271 19.312 26.376 26.828 19.385 5.721 47.35 6.394 71.854 6.394 34.654 0 75.015-1.907 101.71-10.432V43.666h-96.294v18.731h14.625v4.269c0 4.382 2.542 12.583-16.234 12.583-15.915 0-17.189-5.28-17.189-6.291v-42.77c0-4.156 1.274-9.435 17.189-9.435 18.776 0 16.234 8.199 16.234 12.467v2.125H610V11.106Zm-18.849 52.592a7.656 7.656 0 0 1 7.651 7.651A7.655 7.655 0 0 1 591.151 79a7.654 7.654 0 0 1-7.651-7.651 7.655 7.655 0 0 1 7.651-7.651Z" 
+              />
+
+              </svg>     
+
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
