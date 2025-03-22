@@ -5,7 +5,7 @@ class SiteFooter extends HTMLElement {
     this.innerHTML = `
   
     <div class="footer-container">
-        <div>&emsp;©<span id="year"></span>&emsp;Doberman on Graphics</div>
+        <div>&emsp;©<span id="year"></span>&nbsp;Doberman on Graphics</div>
         <div>(626) 325-8182&emsp;Los Angeles 
         <span style="color: var(--ch1);">&emsp;&#x2B24;&emsp;</span>
         San Diego&emsp;(760) 456-9091&emsp;</div>
@@ -71,9 +71,9 @@ class SiteHeader extends HTMLElement {
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="design.html">Design</a></li>
-                <li class="nav-item"><a class="nav-link" href="branding.html">Branding</a></li>
-                <li class="nav-item"><a class="nav-link" href="illustration.html">Illustration</a></li>
-                <li class="nav-item"><a class="nav-link" href="photography.html">Photography</a></li>
+                <li class="nav-item"><a class="nav-link" href="logo.html">Logo</a></li>
+                <li class="nav-item"><a class="nav-link" href="draw.html">Draw</a></li>
+                <li class="nav-item"><a class="nav-link" href="photo.html">Photo</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
               </ul>
             </div>

@@ -42,11 +42,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.top-buffer {
+.page-buffer {
   height: 150px;
 }
 
-.div-wrap {
+.divider-wrap {
   height: 10px; /* Set the container's height */
   width: 100vw; 
   position: relative; /* Ensures proper positioning for .parallax */
@@ -352,26 +352,7 @@ footer {
 /*#endregion*/
 /*#region ===== PROJECT ============ */
 
-.project-content {
-  justify-content: center;
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100vw;
-  margin: 2rem 1rem;
-}
-.project-text {
-  flex: 1;
-  padding-left: 2rem;
-  align-self: flex-start; /* Aligns text to the top */
-}
-
-.project-img {
-  width: 33vw; 
-  display: flex;
-  flex-direction: column;
-  object-fit: contain; 
-}
+/* ---------- TOP TEXT ---------- */
 
 .top-container {
   justify-content: center;
@@ -388,6 +369,7 @@ footer {
 }
 
 /* ---------- TOP GRID ---------- */
+
 .top-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -407,7 +389,6 @@ footer {
   width: 11vw; /* 1/3 of top-grid */
   height: auto;
 }
-
 .grid-box a {
   position: absolute; /* Makes the anchor fill the entire box */
   top: 0;
@@ -416,12 +397,6 @@ footer {
   height: 100%;
   display: block; /* Ensures the link behaves as a block element */
 }
-
-/*.grid-box img{
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}*/
 .grid-box:hover {
   border-color: var(--ch1);
   transition: transform .3s ease; 
@@ -453,6 +428,47 @@ footer {
   }
 }
 
+/* ---------- PROJECT ---------- */
+
+.project-content { 
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 100vw;
+	margin: 2rem 2rem;
+}
+.project-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.project-text {
+  flex: 1;
+  padding-left: 2rem;
+  align-self: flex-start; /* Aligns text to the top */
+}
+.project-img img{ 
+  float: right;
+  margin: 0 0 1.5rem 2rem; /* Space left and bottom */
+}
+.project-img.horz {
+  flex-direction: column;
+}
+.project-img.horz img {
+  max-width: 33vw;
+  width: auto; 
+  object-fit: contain;
+}
+.project-img.vert {
+  flex-direction: row;
+}
+.project-img.vert img {
+  max-height: 33vw;
+  width: auto; 
+  object-fit: contain;
+}
+figure.project-img {
+  margin-bottom: 0; /* Remove the bottom margin */
+}
 
 /*#endregion*/
 /*#region ===== VIEWPORT ============ */
