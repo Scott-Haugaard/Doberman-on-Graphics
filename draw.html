@@ -50,7 +50,7 @@
 				Hands are hard to draw!
 			</p>
 			<p>
-				I paid two other people to illustrate these brochure instructions for Frame Strips, a local manufacturer.
+				I paid two other people to illustrate these brochure instructions, for Frame Strips, a local manufacturer.
 				After rejected both, because I knew that I could do better. Buying my first digital camera, and posing for each step in the processes. It ended up being a very expensive solution. But, entirely happy with the outcome and knowledge. 
 			</p>
 		</article>
@@ -238,34 +238,7 @@
 		<!-- Footer -->
 	</site-footer>
 </footer>
-<script>
-function resizeImagesToArea(targetArea) {
-  const images = document.querySelectorAll("img");
 
-  images.forEach(image => {
-    // Wait for the image to load so we can get its natural dimensions
-    image.onload = () => {
-      const originalWidth = image.naturalWidth;
-      const originalHeight = image.naturalHeight;
-
-      // Calculate scaling factor
-      const originalArea = originalWidth * originalHeight;
-      const scalingFactor = Math.sqrt(targetArea / originalArea);
-
-      // Calculate new dimensions and update the image
-      const newWidth = Math.round(originalWidth * scalingFactor);
-      const newHeight = Math.round(originalHeight * scalingFactor);
-
-      image.width = newWidth;
-      image.height = newHeight;
-    };
-  });
-}
-
-// Call the function with a constant area of 30,000
-resizeImagesToArea(200000);
-
-</script>
 <script	src="./resources/js/index.js"></script>
 <script	src="./resources/js/bootstrap.bundle.min.js"></script>
 </body>
