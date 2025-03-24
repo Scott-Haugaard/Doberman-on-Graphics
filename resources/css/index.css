@@ -1,4 +1,25 @@
-/*#region ===== BODY ================ */
+/*#region ===== @ MEDIA =========== */
+    /* Define a default target area using a CSS variable */
+    :root {
+      --target-area: 300000; /* Default target area in pixels */
+  }
+
+  /* Adjust target area based on screen width */
+  @media (max-width: 1200px) {
+      :root {
+          --target-area: 200000; /* Smaller area for smaller screens */
+      }
+  }
+
+  @media (max-width: 768px) {
+      :root {
+          --target-area: 150000; /* Even smaller area for mobile screens */
+      }
+  }
+
+
+/*#endregion*/
+/*#region ===== BODY ============== */
 
 * {
   margin: 0;
@@ -47,10 +68,10 @@ a {
 }
 
 .divider-wrap {
-  height: 10px; /* Set the container's height */
-  width: 100vw; 
-  position: relative; /* Ensures proper positioning for .parallax */
-  z-index: 0; /* Default for container */
+  height: 10px; 
+  width: 100%; 
+  position: relative;
+  z-index: 2; 
 }
 .parallax {
   background-image: url("../images/chain.png");
@@ -70,7 +91,7 @@ a {
 
 
 /*#endregion*/
-/*#region ===== CAROUSEL ============ */
+/*#region ===== CAROUSEL ========== */
 
 .glide__slide {
   position: relative;
@@ -110,7 +131,7 @@ a {
 }
 
 /*#endregion*/
-/*#region ===== COLOR =============== */
+/*#region ===== COLOR ============= */
 
 :root {
   --ch1: #ffc800;  /* var(--ch1)  h1 Font     */
@@ -128,7 +149,7 @@ a {
 }
 
 /*#endregion*/
-/*#region ===== FONTS =============== */
+/*#region ===== FONTS ============= */
 
 body {
   color: white; 
@@ -152,7 +173,7 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 2.5rem;
-  /*margin-top: 275px;  */
+  padding-bottom: 1rem;
   text-align: center;
 }
 h3 {
@@ -196,9 +217,9 @@ Don't seem nessary */
   display: inline-block;
   vertical-align: baseline;
 }
-
+ 
 /*#endregion*/
-/*#region ===== FOOTER ============== */
+/*#region ===== FOOTER ============ */
 
 footer {
   position: absolute;
@@ -224,7 +245,7 @@ footer {
 }
 
 /*#endregion*/
-/*#region ===== NAVBAR ============== */
+/*#region ===== NAVBAR ============ */
 
 #navbar { 
   background-color: var(--ccn) !important;
@@ -264,7 +285,7 @@ footer {
 */  
 
 /*#endregion*/
-/*#region ===== PHOTOBOX ============ */
+/*#region ===== PHOTOBOX ========== */
 
 /* Parent container */
 .photobox-container {
@@ -335,7 +356,7 @@ footer {
 }
 
 /*#endregion*/
-/*#region ===== SITEMAP ============= */
+/*#region ===== SITEMAP =========== */
 
 .sitemap ul {
   list-style-type: disc;
@@ -350,7 +371,7 @@ footer {
   font-weight: bold;
 }
 /*#endregion*/
-/*#region ===== PROJECT ============ */
+/*#region ===== PROJECT =========== */
 
 /* ---------- TOP TEXT ---------- */
 
@@ -466,12 +487,17 @@ footer {
   width: auto; 
   object-fit: contain;
 }
-figure.project-img {
+.img-border {
+  border: 1.4px solid white;
+}
+.figure.project-img {
   margin-bottom: 0; /* Remove the bottom margin */
 }
 
+
+
 /*#endregion*/
-/*#region ===== VIEWPORT ============ */
+/*#region ===== VIEWPORT ========== */
 
 
 #viewport-size {
@@ -491,7 +517,7 @@ figure.project-img {
 
 /*#endregion*/
 
-/*#region ===== SIGNATURE =========== *//*
+/*#region ===== SIGNATURE ========= *//*
 
 \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
  ___         _   _   
@@ -509,3 +535,4 @@ ScottHaugaard@hotmail.com - 760/456.9091
 /\//\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\//\/\
 
 *//*#endregion*/
+

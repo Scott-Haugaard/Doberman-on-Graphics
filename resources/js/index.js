@@ -156,3 +156,29 @@ function updateViewportSize() {
   
  // #endregion
 
+// #region === RESIZE IMAGE =======================
+function resizeImagesToArea(targetArea) {
+  const images = document.querySelectorAll("img");
+
+  images.forEach(image => {
+    // Wait for the image to load so we can get its natural dimensions
+    image.onload = () => {
+      const originalWidth = image.naturalWidth;
+      const originalHeight = image.naturalHeight;
+
+      // Calculate scaling factor
+      const originalArea = originalWidth * originalHeight;
+      const scalingFactor = Math.sqrt(targetArea / originalArea);
+
+      // Calculate new dimensions and update the image
+      const newWidth = Math.round(originalWidth * scalingFactor);
+      const newHeight = Math.round(originalHeight * scalingFactor);
+
+      image.width = newWidth;
+      image.height = newHeight;
+    };
+  });
+}
+
+// Call the function with a constant area of 30,000
+resizeImagesToArea(200000);
