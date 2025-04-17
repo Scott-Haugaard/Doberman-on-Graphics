@@ -74,6 +74,7 @@ class SiteHeader extends HTMLElement {
                 <li class="nav-item"><a class="nav-link" href="logo.html">Logo</a></li>
                 <li class="nav-item"><a class="nav-link" href="draw.html">Draw</a></li>
                 <li class="nav-item"><a class="nav-link" href="photo.html">Photo</a></li>
+                <li class="nav-item"><a class="nav-link" href="misc.html">Misc</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
               </ul>
             </div>

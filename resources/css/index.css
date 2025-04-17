@@ -67,28 +67,45 @@ a {
   height: 150px;
 }
 
+
+/*#endregion*/
+/*#region ===== DIVIDER =========== */
+
 .divider-wrap {
-  height: 10px; 
+  height: 25px; 
   width: 100%; 
   position: relative;
   z-index: 2; 
 }
+
 .parallax {
   background-image: url("../images/chain.png");
   background-repeat: repeat-y;
-  background-position: calc(100% - 1rem) calc(100% + 160px); /* Moves the image right by 1rem */
   background-attachment: fixed;
-  background-size: 600px auto; /* Scales the image width to 600px while maintaining aspect ratio */
+  background-size: 400px auto; /* Scales the image width to 600px while maintaining aspect ratio */
   background-color: #ffc800;
   height: 100%; /* Matches .div-wrap height */
   width: 100%; /* Stretches across container */
   position: absolute; /* Positions it relative to .div-wrap */
   top: 0;
-  right: 0; /* Ensures alignment */
-  z-index: 1; /* Brings it in front of other content */
+  left: 0; /* Ensures alignment */
 }
 
-
+/*
+.parallax {
+  background-image: url("../images/chain.png");
+  background-repeat: repeat-y;
+  background-position: calc(100% - 1rem) calc(100% + 160px); /* Moves the image right by 1rem 
+  background-attachment: fixed;
+  background-size: 600px auto; /* Scales the image width to 600px while maintaining aspect ratio 
+  background-color: #ffc800;
+  height: 100%; /* Matches .div-wrap height 
+  width: 100%; /* Stretches across container 
+  position: absolute; /* Positions it relative to .div-wrap 
+  top: 0;
+  right: 0; /* Ensures alignment 
+}
+*/
 
 /*#endregion*/
 /*#region ===== CAROUSEL ========== */
@@ -138,6 +155,7 @@ a {
   --ch2: #ffc800;  /* var(--ch2)  h2 Font     */
   --ccn: #2D0000;  /* var(--ccn)  Chain       */
   --cbg: #000000;  /* var(--cbg)  Background  */
+
 }
 /* Color Elements */btn btn-success
 .btn-primary, .btn-success {
