@@ -1,22 +1,27 @@
 /*#region ===== @ MEDIA =========== */
     /* Define a default target area using a CSS variable */
     :root {
-      --target-area: 300000; /* Default target area in pixels */
+      --targetArea: 300000; /* Default target area in pixels */
   }
 
   /* Adjust target area based on screen width */
   @media (max-width: 1200px) {
       :root {
-          --target-area: 200000; /* Smaller area for smaller screens */
+          --targetArea: 200000; /* Smaller area for smaller screens */
       }
   }
 
   @media (max-width: 768px) {
       :root {
-          --target-area: 150000; /* Even smaller area for mobile screens */
+          --targetArea: 150000; /* Even smaller area for mobile screens */
       }
   }
 
+  @media (max-width: 400px) {
+    :root {
+        --targetArea: 150000/2; /* Even smaller area for mobile screens */
+    }
+}
 
 /*#endregion*/
 /*#region ===== BODY ============== */
